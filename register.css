@@ -1,0 +1,52 @@
+body{
+    overflow: hidden;
+    margin: 0;
+}
+.bg{
+    height: 1900px;
+    background:url(loginbg.jpg) no-repeat fixed center;
+    background-size: cover;
+    filter: blur(7px);
+    z-index: -1;
+}
+.form h1{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.form{
+    background-color: rgba(200, 90, 12, 0.632);
+    z-index: 2;
+    position: absolute;
+    top: 22px;
+     color: white;
+     padding-top: 1px;
+    width: 35%;
+    left: 450px;
+    font-size: 18px;
+    padding: 15px;
+    box-shadow: 10px 10px 10px 2px rgb(46, 46, 46);
+}
+input{
+    
+    font-size: 20px;
+}
+label{
+    font-weight: bold;
+    cursor: pointer;
+}
+select{
+    font-size: 20px;
+}
+input[type="reset"]
+{
+    margin-top: 10px; 
+    margin-left: 50px;
+    padding: 10px 15px;
+}
+input[type="button"]
+{
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px 15px;
+}
