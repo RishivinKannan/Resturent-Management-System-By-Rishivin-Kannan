@@ -1,0 +1,132 @@
+<html> 
+    <head>
+    <title>FOOD ORDER FORM</title>
+    <link rel="stylesheet" type="text/css" href="./bill.css">
+    <script type="text/javascript" src="./north.js">  </script> </head>
+    <body>  
+        <h2>==========Price list==========</h2> 
+        <table width="40%" id="alignment" > 
+            <tr>  
+            <th>Food Item</th> 
+            <th></th>
+            <th>Price(Rs.)</th>
+            </tr> 
+            <tr>
+            <td>Stuffed Bati</td> 
+            <td> - </td>
+            <td>50.00</td> 
+            </tr> 
+            <tr>
+            <td>Noodles</td>
+            <td> - </td> 
+            <td>100.00</td> 
+            </tr>
+            <tr> 
+            <td>Chicken Dum Biriyani</td>
+            <td> - </td>  
+            <td>400.00</td>
+            </tr> 
+            <tr>  
+            <td>Aloo Samosa</td>
+            <td> - </td> 
+            <td>200.00</td> 
+            </tr>  
+            <tr>
+            <td>Butter Chicken</td>
+            <td> - </td> 
+            <td>150.00</td>
+            </tr>
+            </table>
+            <h>Best Food - Order Form</h1>
+                <table style="background-color:aquamarine;margin-left: 100px;" class="user">  <tr>
+                <td>Branch : </td>
+                <td> 
+                <select> 
+                <option>--Select Location--</option>
+                <option>Sathuvachari</option>
+                <option>Bramhapuram</option> 
+                </select>
+                </td> 
+                </tr>
+                <tr>
+                <td>User name:</td>
+                <td>
+                <input type="text" id="tt">
+                </td>
+                </tr>
+                <tr><td>Mobile: </td>
+                <td><input type="text" id="mblenmb" onfocusout="checkmob()"></td></tr> 
+                </table>
+                <br>
+                <form name="tblform" >
+                    <table width="80%"  id="alignment"  class="item">
+                    <tr>
+                    <th>Food Item</th>
+                    <th> </th>
+                    <th>Quantity</th>
+                    </tr>
+                    <tr> 
+                    <td>Item 1:</td> 
+                    <td>
+                    <select id="item1">
+                    <option value="1">--Select Item--</option> 
+                    <option value="Stuffed Bati">Stuffed Bati</option> 
+                    <option value="Noodles">Noodles</option> 
+                    <option value="Chicken Dum Biriyani">Chicken Dum Biriyani</option> 
+                    <option value="Aloo Samosa">Aloo Samosa</option> 
+                    <option value="Butter Chicken">Butter Chicken</option> 
+                    </select>
+                    </td> 
+                    <td><input type="number" value="0" id="q1"></td>
+                    </tr>   
+                    <tr>
+                    <td>Item 2:</td>
+                    <td>
+                    <select id="item2"> 
+                    <option value="1">--Select Item--</option> 
+                    <option value="Stuffed Bati">Stuffed Bati</option> 
+                    <option value="Noodles">Noodles</option> 
+                    <option value="Chicken Dum Biriyani">Chicken Dum Biriyani</option> 
+                    <option value="Aloo Samosa">Aloo Samosa</option> 
+                    <option value="Butter Chicken">Butter Chicken</option> 
+                    </select>
+                    </td>
+                    <td><input  type="number" value="0" id="q2"></td>  
+                    </tr> 
+                    <tr>
+                    <td>Item 3:</td>
+                    <td><select id="item3">  
+                    <option value="1">--Select Item--</option> 
+                    <option value="Stuffed Bati">Stuffed Bati</option> 
+                    <option value="Noodles">Noodles</option> 
+                    <option value="Chicken Dum Biriyani">Chicken Dum Biriyani</option> 
+                    <option value="Aloo Samosa">Aloo Samosa</option> 
+                    <option value="Butter Chicken">Butter Chicken</option> 
+                    </select>
+                    </td>
+                    <td><input type="number" value="0" id="q3"></td>
+                    </tr> 
+                    <tr>
+                    <td>Item 4:</td>
+                    <td><select id="item4">   
+                    <option value="1">--Select Item--</option> 
+                    <option value="Stuffed Bati">Stuffed Bati</option> 
+                    <option value="Noodles">Noodles</option> 
+                    <option value="Chicken Dum Biriyani">Chicken Dum Biriyani</option> 
+                    <option value="Aloo Samosa">Aloo Samosa</option> 
+                    <option value="Butter Chicken">Butter Chicken</option> 
+                    </select>
+                    </td>
+                    <td><input type="number" value="0" id="q4"></td>
+                    </tr>    
+                    <tr>
+                    <td></td> 
+                    <td></td> 
+                    <td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+                    <td><input type="reset" class="button" value="Clear"></td>
+                    </tr>
+                    </table>
+                    </form>
+                </body>
+
+    </html >

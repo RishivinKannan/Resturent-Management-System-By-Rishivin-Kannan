@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Breakfast</title>
+        <link rel="stylesheet" type="text/css" href="./bill.css">
+        <script type="text/javascript" src="./breakfast.js">  </script>
+        <style>
+            body
+            {
+                background-color:aquamarine;
+            }
+            h1
+            {
+                color: brown;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+            .content
+            {
+                display:inline-block;
+                justify-content: center;
+                align-content: center;
+                margin-left: 9%;
+
+            }
+            .content img
+            {
+               height: 200px;
+               width: 300px;
+               border:2px solid wheat;
+            }
+            h2 a
+            {
+                color:whitesmoke;
+                background-color: cadetblue;
+                padding: 10px;
+                border: 2px solid goldenrod;
+                text-decoration: none;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+       <h1>Breakfast Available in This Hotel</h1>
+       <div class="content">
+        <img src="./Images/food1.jpg">
+        <img src="./Images/food2.jpg">
+        <img src="./Images/food3.jpg">
+        <img src="./Images/food4.jpg"><br><br>
+        <img src="./Images/food5.jpg">
+        <img src="./Images/food6.jpg">
+        <img src="./Images/food7.jpg">
+        <img src="./Images/food8.jpg">
+       </div>
+       <br>
+       <h2 align="center"><a href="#pp">Place Order</a></h2>
+       <div class="price" id="pp">
+        <h2>==========Price list==========</h2> 
+        <table width="40%" id="alignment" > 
+            <tr>  
+            <th>Food Item</th> 
+            <th></th>
+            <th>Price(Rs.)</th>
+            </tr> 
+            <tr>
+            <td>Diet Fruits</td> 
+            <td> - </td>
+            <td>50.00</td> 
+            </tr> 
+            <tr>
+            <td>Idli With Sambar</td>
+            <td> - </td> 
+            <td>100.00</td> 
+            </tr>
+            <tr> 
+            <td>Kuzhi Paniyaaram</td>
+            <td> - </td>  
+            <td>400.00</td>
+            </tr> 
+            <tr>  
+            <td>Dosa With Side dish</td>
+            <td> - </td> 
+            <td>200.00</td> 
+            </tr>  
+            <tr>
+            <td>Rava</td>
+            <td> - </td> 
+            <td>150.00</td>
+            </tr>
+            </table>
+            <h>Best Food - Order Form</h1>
+                <table style="background-color:aquamarine;margin-left: 100px;" class="user">  <tr>
+                <td>Branch : </td>
+                <td> 
+                <select> 
+                <option>--Select Location--</option>
+                <option>Sathuvachari</option>
+                <option>Bramhapuram</option> 
+                </select>
+                </td> 
+                </tr>
+                <tr>
+                <td>User name:</td>
+                <td>
+                <input type="text" id="tt">
+                </td>
+                </tr>
+                <tr><td>Mobile: </td>
+                <td><input type="text" id="mblenmb" onfocusout="checkmob()"></td></tr> 
+                </table>
+                <br>
+                <form name="tblform" >
+                    <table width="80%"  id="alignment"  class="item">
+                    <tr>
+                    <th>Food Item</th>
+                    <th> </th>
+                    <th>Quantity</th>
+                    </tr>
+                    <tr> 
+                    <td>Item 1:</td> 
+                    <td>
+                    <select id="item1">
+                    <option value="1">--Select Item--</option> 
+                    <option value="Diet Fruits">Diet Fruits</option> 
+                    <option value="Idli With Sambar">Idli With Sambar</option> 
+                    <option value="Kuzhi Paniyaaram">Kuzhi Paniyaaram</option> 
+                    <option value="Dosa With Side dish">Dosa With Side dish</option> 
+                    <option value="Rava">Rava</option> 
+                    </select>
+                    </td> 
+                    <td><input type="number" value="0" id="q1"></td>
+                    </tr>   
+                    <tr>
+                    <td>Item 2:</td>
+                    <td>
+                    <select id="item2"> 
+                    <option value="1">--Select Item--</option> 
+                    <option value="Diet Fruits">Diet Fruits</option> 
+                    <option value="Idli With Sambar">Idli With Sambar</option> 
+                    <option value="Kuzhi Paniyaaram">Kuzhi Paniyaaram</option> 
+                    <option value="Dosa With Side dish">Dosa With Side dish</option> 
+                    <option value="Rava">Rava</option> 
+                    </select>
+                    </td>
+                    <td><input  type="number" value="0" id="q2"></td>  
+                    </tr> 
+                    <tr>
+                    <td>Item 3:</td>
+                    <td><select id="item3">  
+                    <option value="1">--Select Item--</option> 
+                    <option value="Diet Fruits">Diet Fruits</option> 
+                    <option value="Idli With Sambar">Idli With Sambar</option> 
+                    <option value="Kuzhi Paniyaaram">Kuzhi Paniyaaram</option> 
+                    <option value="Dosa With Side dish">Dosa With Side dish</option> 
+                    <option value="Rava">Rava</option> 
+                    </select>
+                    </td>
+                    <td><input type="number" value="0" id="q3"></td>
+                    </tr> 
+                    <tr>
+                    <td>Item 4:</td>
+                    <td><select id="item4">   
+                    <option value="1">--Select Item--</option> 
+                    <option value="Diet Fruits">Diet Fruits</option> 
+                    <option value="Idli With Sambar">Idli With Sambar</option> 
+                    <option value="Kuzhi Paniyaaram">Kuzhi Paniyaaram</option> 
+                    <option value="Dosa With Side dish">Dosa With Side dish</option> 
+                    <option value="Rava">Rava</option> 
+                    </select>
+                    </td>
+                    <td><input type="number" value="0" id="q4"></td>
+                    </tr>    
+                    <tr>
+                    <td></td> 
+                    <td></td> 
+                    <td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+                    <td><input type="reset" class="button" value="Clear"></td>
+                    </tr>
+                    </table>
+                    </form>
+       </div>
+       <br>
+    </body>
+</html>

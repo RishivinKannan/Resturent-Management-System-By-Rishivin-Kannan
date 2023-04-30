@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Fast Food</title>
+        <link rel="stylesheet" type="text/css" href="./bill.css">
+        <script type="text/javascript" src="./fastfood.js">  </script>
+        <style>
+            body
+            {
+                background-color:rgb(255, 127, 242);
+            }
+            h1
+            {
+                color: rgb(45, 18, 198);
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+            .content
+            {
+                display:inline-block;
+                justify-content: center;
+                align-content: center;
+                margin-left: 9%;
+
+            }
+            .content img
+            {
+               height: 200px;
+               width: 300px;
+               border:2px solid wheat;
+               border-radius: 15px;
+            }
+            h2 a
+            {
+                font-size: 20px;
+                color:whitesmoke;
+                background-color: rgb(109, 1, 8);
+                padding: 15px;
+                border: 2px solid goldenrod;
+                text-decoration: none;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+       <h1>Fast Foods Available in This Hotel</h1>
+       <div class="content">
+        <img src="./Images/foo1.jpg">
+        <img src="./Images/foo2.jpg">
+        <img src="./Images/foo3.jpg">
+        <img src="./Images/foo4.jpg"><br><br>
+        <img src="./Images/foo5.jpg">
+        <img src="./Images/foo6.jpg">
+        <img src="./Images/foo7.jpg">
+        <img src="./Images/foo8.jpg">
+       </div>
+       <br>
+       <h2 align="center"><a href="#pp">Click Here To Order</a></h2>
+       <div class="price" id="pp">
+        <h2><br>==========Price list==========</h2> 
+        <table width="40%" id="alignment" > 
+            <tr>  
+            <th>Food Item</th> 
+            <th></th>
+            <th>Price(Rs.)</th>
+            </tr> 
+            <tr>
+            <td>Chicken Noodles</td> 
+            <td> - </td>
+            <td>50.00</td> 
+            </tr> 
+            <tr>
+            <td>Pizza</td>
+            <td> - </td> 
+            <td>100.00</td> 
+            </tr>
+            <tr> 
+            <td>Burger</td>
+            <td> - </td>  
+            <td>400.00</td>
+            </tr> 
+            <tr>  
+            <td>Egg Fried Rice</td>
+            <td> - </td> 
+            <td>200.00</td> 
+            </tr>  
+            <tr>
+            <td>Chicken Shawarma</td>
+            <td> - </td> 
+            <td>150.00</td>
+            </tr>
+            </table>
+            <h>Best Food - Order Form</h1>
+                <table style="background-color:aquamarine;margin-left: 100px;" class="user">  <tr>
+                <td>Branch : </td>
+                <td> 
+                <select> 
+                <option>--Select Location--</option>
+                <option>Sathuvachari</option>
+                <option>Bramhapuram</option> 
+                </select>
+                </td> 
+                </tr>
+                <tr>
+                <td>User name:</td>
+                <td>
+                <input type="text" id="tt">
+                </td>
+                </tr>
+                <tr><td>Mobile: </td>
+                <td><input type="text" id="mblenmb" onfocusout="checkmob()"></td></tr> 
+                </table>
+                <br>
+                <form name="tblform" >
+                    <table width="80%"  id="alignment" class="item">
+                    <tr>
+                    <th>Food Item</th>
+                    <th> </th>
+                    <th>Quantity</th>
+                    </tr>
+                    <tr> 
+                    <td>Item 1:</td> 
+                    <td>
+                    <select id="item1">
+                    <option value="1">--Select Item--</option> 
+                    <option value="Chicken Noodles">Chicken Noodles</option> 
+                    <option value="Pizza">Pizza</option> 
+                    <option value="Burger">Burger</option> 
+                    <option value="Egg Fried Rice">Egg Fried Rice</option> 
+                    <option value="Chicken Shawarma">Chicken Shawarma</option> 
+                    </select>
+                    </td> 
+                    <td><input type="number" value="0" id="q1"></td>
+                    </tr>   
+                    <tr>
+                    <td>Item 2:</td>
+                    <td>
+                    <select id="item2"> 
+                    <option value="1">--Select Item--</option> 
+                    <option value="Chicken Noodles">Chicken Noodles</option> 
+                    <option value="Pizza">Pizza</option> 
+                    <option value="Burger">Burger</option> 
+                    <option value="Egg Fried Rice">Egg Fried Rice</option> 
+                    <option value="Chicken Shawarma">Chicken Shawarma</option> 
+                    </select>
+                    </td>
+                    <td><input  type="number" value="0" id="q2"></td>  
+                    </tr> 
+                    <tr>
+                    <td>Item 3:</td>
+                    <td><select id="item3">  
+                    <option value="1">--Select Item--</option> 
+                    <option value="Chicken Noodles">Chicken Noodles</option> 
+                    <option value="Pizza">Pizza</option> 
+                    <option value="Burger">Burger</option> 
+                    <option value="Egg Fried Rice">Egg Fried Rice</option> 
+                    <option value="Chicken Shawarma">Chicken Shawarma</option> 
+                    </select>
+                    </td>
+                    <td><input type="number" value="0" id="q3"></td>
+                    </tr> 
+                    <tr>
+                    <td>Item 4:</td>
+                    <td><select id="item4">   
+                    <option value="1">--Select Item--</option> 
+                    <option value="Chicken Noodles">Chicken Noodles</option> 
+                    <option value="Pizza">Pizza</option> 
+                    <option value="Burger">Burger</option> 
+                    <option value="Egg Fried Rice">Egg Fried Rice</option> 
+                    <option value="Chicken Shawarma">Chicken Shawarma</option> 
+                    </select>
+                    </td>
+                    <td><input type="number" value="0" id="q4"></td>
+                    </tr>    
+                    <tr>
+                    <td></td> 
+                    <td></td> 
+                    <td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+                    <td><input type="reset" class="button" value="Clear"></td>
+                    </tr>
+                    </table>
+                    </form>
+       </div>
+       <br>
+    </body>
+</html>

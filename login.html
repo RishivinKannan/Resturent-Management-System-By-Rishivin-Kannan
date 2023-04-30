@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                 
+   <link rel="shortcut icon" type="image" href="./2.png">
+   <link rel="stylesheet" href="./login.css" type="text/css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+   <script src="./login.js"></script>
+   <title>Best Food-Login</title>
+   <style>
+        .h{
+            right: 0;
+            margin-top: 1px;
+        }
+        input
+        {
+          outline: none;
+        }
+    </style>
+</head>
+<body onload="cap()">
+   <div class="bg">
+      
+   </div>
+   <div class="form">
+      <h1>Login</h1>
+      <form id="for" method="get">
+         <label for="us" >Enter Username</label><br>
+         <input type="text" name="username" id="us" placeholder="Username" ><br>
+         <label for="pass">Enter Password</label><br>
+         <input type="password" name="password" id="pass" placeholder="Password"><br>
+         <label for="capcha">Enter capcha</label><br>
+         <input type="text" readonly id="capt"><input type="text" id="capcha"><br>
+         <input type="button" id="submit" value="Login" onclick="loginval()" style="padding:20px;">
+      </form>
+      <p class="c1">Change Captcha<img src="./Images/refresh.png" onclick="cap()" width="40px"></p>
+      <p class="p1"><a href="./forgot.htm" class="a1">change password</a>Sign up</p>
+      <p class="p2"><a href="./register.html" class="a3">Click here</a></p>
+      <p class="p2"><a href="./Home.html" class="a1"> Previous page</a></p>
+   </div>
+   
+</body>
+</html>
